@@ -113,9 +113,9 @@ Streaming platforms fail not for lack of data but for lack of structure. A flat 
 
 | File | Contents |
 |---|---|
-| [Stage1_Feature_Engineering.ipynb] | Full notebook — cleaning, features, EDA, all visualisations |
-| [cleaned_movielens.csv](./cleaned_movielens.csv) | Output dataset — 100,823 rows, 18 columns |
-| [MovieLens_Stage1_Final_Report.pdf](./MovieLens_Stage1_Final_Report.pdf) | Written report — features, insights, recommendations |
+| [Stage1_Feature_Engineering.ipynb](https://github.com/favourogunbiyi/MovieLens-Engineering-and-EDA-Project/blob/main/Stage1_Internship_task_Feature_Engineering_for_FavourOgunbiyi.pdf) | Full notebook — cleaning, features, EDA, all visualisations |
+| [cleaned_movielens.csv]() | Output dataset — 100,823 rows, 18 columns |
+| [MovieLens_Stage1_Final_Report.pdf]() | Written report — features, insights, recommendations |
 | `movies.csv` · `ratings.csv` · `tags.csv` · `links.csv` | Raw source files |
 
 ## Context
