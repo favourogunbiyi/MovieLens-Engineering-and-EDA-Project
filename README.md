@@ -118,8 +118,6 @@ Streaming platforms fail not for lack of data but for lack of structure. A flat 
 | [MovieLens_Stage1_Final_Report.pdf](https://github.com/favourogunbiyi/MovieLens-Engineering-and-EDA-Project/blob/main/MovieLens_Stage1_Final_Report_For_FavourOgunbiyi.pdf) | Written report — features, insights, recommendations |
 | `movies.csv` · `ratings.csv` · `tags.csv` · `links.csv` | Raw source files |
 
-## Context
-
 **HNG Internship (HNGi13) · Stage 1 · Data Analytics Track**
 Remote · self-directed · deadline: 22nd October 2025
 
