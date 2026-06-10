@@ -65,33 +65,31 @@ Streaming platforms fail not for lack of data but for lack of structure. A flat 
 
 ## Part C — Six Insights
 
-### 1. Ratings are positively skewed — and the compression is a problem · [View →](./Stage1_Feature_Engineering.ipynb)
+### 1. Ratings are positively skewed, and the compression is a problem
 
 **48.2% of all 100,836 ratings are 4.0 or above. Only 5.9% fall below 2.0.** The mean sits at 3.50. This positive bias compresses meaningful differences between films — a recommender that uses raw ratings alone will struggle to separate "great" from "good."
 
-### 2. 1940s films average 3.87 — nostalgia is measurable, not just a feeling · [View →](./Stage1_Feature_Engineering.ipynb)
+### 2. 1940s films average 3.87 — nostalgia is measurable, not just a feeling
 
 **Ratings peak in the 1940s (3.87) and decline steadily through the 1990s (3.44) before a modest recovery in the 2010s (3.49).** The likely cause: survival bias. Bad films from the 1940s have no ratings because no one kept watching them. `release_year` and `decade` are real signals for a recommendation model.
 
-### 3. Multi-genre films rate consistently higher · [View →](./Stage1_Feature_Engineering.ipynb)
+### 3. Multi-genre films rate consistently higher
 
 **Films tagged with 10 genres sit at the top of the average-rating chart; single-genre films sit lowest.** Multi-genre titles attract broader audiences, which smooth out extremely low ratings. `num_genres` is worth including in a hybrid recommender as a content-breadth signal.
 
-### 4. Films aged 61–80 years rate highest overall (~3.80 average) · [View →](./Stage1_Feature_Engineering.ipynb)
+### 4. Films aged 61–80 years rate highest overall (~3.80 average)
 
 **The sweet spot is mid-century cinema.** Films 0–20 years old average ~3.50; films 61–80 years old average ~3.80. The very oldest (120+ years) drop back to ~3.25 — thin catalogue, obscure titles. `movie_age` and `age_group` together capture this curve for personalisation.
 
----
-
-### 5. Film-Noir (~3.93) leads all genres; Horror (~3.25) trails by 0.68 stars · [View →](./Stage1_Feature_Engineering.ipynb)
+### 5. Film-Noir (~3.93) leads all genres; Horror (~3.25) trails by 0.68 stars
 
 **Niche genres outperform mass-market ones — not because they're better, but because only engaged audiences seek them.** Comedy (~3.38) and Horror attract everyone, including people who don't like them, dragging the average down. A recommender that treats all genres as equal signals will systematically misrank both ends.
 
-### 6. Pulp Fiction has 181 tags — 3.3× more than any other title · [View →](./Stage1_Feature_Engineering.ipynb)
+### 6. Pulp Fiction has 181 tags — 3.3× more than any other title
 
 **The top 10 most-tagged films are almost all cult classics: Fight Club (54), 2001: A Space Odyssey (41), Donnie Darko (29).** These are not the most-rated films — they are the most discussed. `num_tags` measures cultural engagement, which is a distinct and complementary signal to `avg_rating`.
 
-## Part D — Recommendation System Output · [Read Report →](./MovieLens_Stage1_Final_Report.pdf)
+## Part D — Recommendation System Output
 
 **3 findings. 4 feature recommendations.**
 
@@ -115,7 +113,7 @@ Streaming platforms fail not for lack of data but for lack of structure. A flat 
 
 | File | Contents |
 |---|---|
-| [Stage1_Feature_Engineering.ipynb](./Stage1_Feature_Engineering.ipynb) | Full notebook — cleaning, features, EDA, all visualisations |
+| [Stage1_Feature_Engineering.ipynb] | Full notebook — cleaning, features, EDA, all visualisations |
 | [cleaned_movielens.csv](./cleaned_movielens.csv) | Output dataset — 100,823 rows, 18 columns |
 | [MovieLens_Stage1_Final_Report.pdf](./MovieLens_Stage1_Final_Report.pdf) | Written report — features, insights, recommendations |
 | `movies.csv` · `ratings.csv` · `tags.csv` · `links.csv` | Raw source files |
