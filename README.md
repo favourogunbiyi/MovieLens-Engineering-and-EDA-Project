@@ -6,14 +6,14 @@ Raw ratings tell you what score a film got. This project engineers the eight fea
 
 ## Tools and Concept
 
-Python · Pandas · NumPy · Matplotlib · Seaborn · Power Query · Feature Engineering · EDA · Data Cleaning · Recommendation Systems
+Python · Pandas · NumPy · Matplotlib · Seaborn · Feature Engineering · EDA · Data Cleaning · Recommendation Systems
 
 ## At a Glance
 
 | | |
 |---|---|
 | **Dataset** | 100,836 ratings · 9,742 movies · 610 users · 4 source files |
-| **Tools** | Python (Pandas, NumPy, Matplotlib, Seaborn) · Power Query |
+| **Tools** | Python (Pandas, NumPy, Matplotlib, Seaborn)
 | **Deliverables** | 8 engineered features · 6 EDA insights · cleaned 100,823-row dataset · written report |
 | **Key finding** | 48.2% of all ratings are 4.0+, yet Film-Noir averages 0.68 stars higher than Horror — the distribution hides more than it reveals |
 
@@ -103,7 +103,7 @@ Streaming platforms fail not for lack of data but for lack of structure. A flat 
 
 ## What This Analysis Doesn't Do
 
-- **No model was built.** Features are engineered and validated as signals — not tested in a live recommendation system with train/test evaluation.
+- **No model was built.** Features was engineered and validated as signals — not tested in a live recommendation system with train/test evaluation.
 - **Tag text was never analysed, only counted.** The words inside tags ("mindfuck," "twist ending") are richer than any count. A TF-IDF pass is the most obvious next step.
 - **52,549 missing tags are structural, not accidental.** 84% of movies have zero tags. `num_tags` carries no signal for those titles — any model using it needs to handle the sparsity.
 - **The nostalgia effect wasn't statistically tested.** Decade-based rating differences are real; whether the cause is survival bias, volume, or something else is unconfirmed.
@@ -114,8 +114,8 @@ Streaming platforms fail not for lack of data but for lack of structure. A flat 
 | File | Contents |
 |---|---|
 | [Stage1_Feature_Engineering.ipynb](https://github.com/favourogunbiyi/MovieLens-Engineering-and-EDA-Project/blob/main/Stage1_Internship_task_Feature_Engineering_for_FavourOgunbiyi.pdf) | Full notebook — cleaning, features, EDA, all visualisations |
-| [cleaned_movielens.csv]() | Output dataset — 100,823 rows, 18 columns |
-| [MovieLens_Stage1_Final_Report.pdf]() | Written report — features, insights, recommendations |
+| cleaned_movielens.csv| Output dataset — 100,823 rows, 18 columns |
+| [MovieLens_Stage1_Final_Report.pdf](https://github.com/favourogunbiyi/MovieLens-Engineering-and-EDA-Project/blob/main/MovieLens_Stage1_Final_Report_For_FavourOgunbiyi.pdf) | Written report — features, insights, recommendations |
 | `movies.csv` · `ratings.csv` · `tags.csv` · `links.csv` | Raw source files |
 
 ## Context
@@ -125,4 +125,4 @@ Remote · self-directed · deadline: 22nd October 2025
 
 *Currently building: Star Schema design · pipeline architecture*
 
-[← Back to portfolio](#)
+*[← Back to main portfolio](https://github.com/favourogunbiyi/data_analysis_portfolio)*
